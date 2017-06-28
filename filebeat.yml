@@ -1,0 +1,7 @@
+filebeat.prospectors:
+  - type: log
+    paths:
+      - /Users/apennebaker/Downloads/somelogs/*.log
+
+output.logstash:
+  hosts: ["localhost:9600"]
