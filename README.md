@@ -30,3 +30,10 @@ logstash_1  | 2017-06-29T16:35:51.138Z cf5e593694ed somedata
 # REQUIREMENTS
 
 * [Docker](https://www.docker.com)
+
+# BUILD DOCKER IMAGES
+
+```console
+$ sh build-filebeat.sh
+$ sh build-logstash.sh
+```
