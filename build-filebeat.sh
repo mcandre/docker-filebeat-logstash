@@ -1,4 +1,4 @@
 #!/bin/bash
 set -euo pipefail
 
-docker build -t filebeat -f filebeat.Dockerfile .
+docker build -t docker-filebeat -f filebeat.Dockerfile .

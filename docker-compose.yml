@@ -1,0 +1,8 @@
+logstash:
+  image: docker-logstash
+  ports:
+    - "5044:5044"
+filebeat:
+  image: docker-filebeat
+  links:
+    - logstash:ls

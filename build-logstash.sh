@@ -1,4 +1,4 @@
 #!/bin/bash
 set -euo pipefail
 
-docker build -t logstash -f logstash.Dockerfile .
+docker build -t docker-logstash -f logstash.Dockerfile .

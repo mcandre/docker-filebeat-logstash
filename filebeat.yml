@@ -1,7 +1,7 @@
 filebeat.prospectors:
   - type: log
     paths:
-      - /Users/apennebaker/Downloads/somelogs/*.log
+      - /logz/*.log
 
 output.logstash:
-  hosts: ["localhost:9600"]
+  hosts: ["${LS_PORT_5044_TCP_ADDR}:5044"]
