@@ -31,6 +31,10 @@ logstash_1  | 2017-06-29T16:35:51.138Z cf5e593694ed somedata
 
 * [Docker](https://www.docker.com)
 
+## Optional
+
+* [coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
+
 # BUILD DOCKER IMAGES
 
 ```console
