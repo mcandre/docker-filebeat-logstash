@@ -6,4 +6,5 @@ RUN apt-get update && \
     go get github.com/elastic/beats/...; which filebeat && \
     mkdir -p /logz
 COPY filebeat.yml /filebeat.yml
-ENTRYPOINT ["/go/bin/filebeat", "-c", "/filebeat.yml", "-e", "-d", "'*'"]
+EXPOSE 6060
+ENTRYPOINT ["/go/bin/filebeat", "-c", "/filebeat.yml", "-httpprof", ":6060", "-e", "-d", "'*'"]

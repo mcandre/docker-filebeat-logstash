@@ -6,3 +6,5 @@ filebeat:
   image: docker-filebeat
   links:
     - logstash:ls
+  ports:
+    - "6060:6060"
